@@ -4,7 +4,7 @@ import { homePage } from '../pageobjects/home.page';
 import { productsAndLicensesPage } from '../pageobjects/product-and-licenses.page';
 
 describe('Activate Trial Example', () => {
-  fit('should activate trial', async () => {
+  it('should activate trial', async () => {
     await loginPage.open();
     await loginPage.login();
     await homePage.headLine.waitForDisplayed({ timeout: 20000 });
